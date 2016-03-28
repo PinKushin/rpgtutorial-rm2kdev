@@ -13,12 +13,39 @@
       <sprite>sprites\spr_Hero_Right</sprite>
     </sprites>
     <sprites name="level">
-      <sprite>sprites\spr_Tree</sprite>
-      <sprite>sprites\spr_Flower</sprite>
+      <sprites name="nature">
+        <sprite>sprites\spr_Flower</sprite>
+        <sprite>sprites\spr_Tree</sprite>
+      </sprites>
+      <sprites name="misc">
+        <sprite>sprites\scoins</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="system">
+      <sprites name="window">
+        <sprite>sprites\swindowBL</sprite>
+        <sprite>sprites\swindowB</sprite>
+        <sprite>sprites\swindowBR</sprite>
+        <sprite>sprites\swindowR</sprite>
+        <sprite>sprites\swindowTR</sprite>
+        <sprite>sprites\swindowT</sprite>
+        <sprite>sprites\swindowTL</sprite>
+        <sprite>sprites\swindowL</sprite>
+        <sprite>sprites\swindowbase</sprite>
+        <sprite>sprites\sprite16</sprite>
+      </sprites>
+    </sprites>
+    <sprites name="NPC">
+      <sprite>sprites\sbobleft</sprite>
+      <sprite>sprites\sbobdown</sprite>
+      <sprite>sprites\sbobright</sprite>
+      <sprite>sprites\sbobup</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
-    <background>background\btileset</background>
+    <backgrounds name="enviroment">
+      <background>background\btileset</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -33,11 +60,29 @@
       <object>objects\oenemypar</object>
     </objects>
     <objects name="level">
-      <object>objects\otree</object>
-      <object>objects\oflower</object>
+      <objects name="nature">
+        <object>objects\otree</object>
+        <object>objects\oflower</object>
+      </objects>
+    </objects>
+    <objects name="system">
+      <object>objects\ogamestate</object>
+      <objects name="window">
+        <object>objects\owindowbase</object>
+      </objects>
+    </objects>
+    <objects name="NPC">
+      <object>objects\onpcbob</object>
+      <object>objects\onpcbase</object>
+    </objects>
+    <objects name="quests">
+      <objects name="npcbob">
+        <object>objects\ogold</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rtitle</room>
     <room>rooms\rintro</room>
   </rooms>
   <help>
